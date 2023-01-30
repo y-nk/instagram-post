@@ -1,0 +1,20 @@
+{
+  "name": "@y_nk/post-to-ig",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "playwright test index.test.ts --config=playwright.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@playwright/test": "^1.29.2",
+    "@types/js-yaml": "^4.0.5",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}

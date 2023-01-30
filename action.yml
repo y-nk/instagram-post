@@ -1,0 +1,25 @@
+name: 'Post to Instagram'
+description: 'Use this action to automate posts to instagram'
+
+inputs:
+  username:
+    description: 'instagram username'
+    required: true
+  password:
+    description: 'instagram password'
+    required: true
+  picture:
+    description: 'name of the file (need to be in filesystem)'
+    required: true
+  caption:
+    description: 'caption for the post'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    USERNAME: ${{ inputs.username }}
+    PASSWORD: ${{ inputs.password }}
+    PICTURE: ${{ inputs.picture }}
+    CAPTION: ${{ inputs.caption }}
